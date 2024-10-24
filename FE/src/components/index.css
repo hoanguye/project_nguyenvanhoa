@@ -1,0 +1,139 @@
+/*Home*/
+
+.Home {
+    width: 900px;
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+/*RepoItem*/
+
+.RepoItem {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.RepoItem:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.RepoItem h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.RepoItem p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.RepoItem p:last-child {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/*Modal detail*/
+
+.ModalDetail-wraper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+
+.ModalDetail {
+    position: relative;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 500px;
+}
+
+.ModalDetail h2 {
+
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.close-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.ModalDetail p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.ModalDetail .commit-author {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.ModalDetail .commit-date {
+    font-style: italic;
+    color: #888;
+}
+
+.ModalDetail .commit-message {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 4px;
+    color: #333;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+/*Button*/
+
+.Filter {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.Filter button {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Filter button:hover {
+    background-color: #ddd;
+}
+
+.Filter button.active {
+    background-color: #1890ff;
+    color: white;
+}
